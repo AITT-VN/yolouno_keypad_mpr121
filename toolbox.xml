@@ -1,0 +1,15 @@
+<xml xmlns="https://developers.google.com/blockly/xml" id="toolbox" style="display: none">
+  <category name="TOUCHPAD" colour="#e63022" icon="th">
+    <block type="uno_mpr121_read_check">
+      <value name="VALUE">
+        <shadow type="text">
+          <field name="TEXT">1234</field>
+        </shadow>
+      </value>
+    </block>
+    <block type="uno_mpr121_read"/>
+    <block type="uno_mpr121_clear"/>
+    <block type="uno_mpr121_scan"/>
+    <block type="uno_mpr121_check"/>
+  </category>
+</xml>
