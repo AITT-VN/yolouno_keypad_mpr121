@@ -3,7 +3,7 @@
     <block type="uno_mpr121_read_check">
       <value name="VALUE">
         <shadow type="text">
-          <field name="TEXT">1234</field>
+          <field name="TEXT">1234#</field>
         </shadow>
       </value>
     </block>

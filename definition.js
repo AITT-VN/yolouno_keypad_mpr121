@@ -22,11 +22,13 @@ Blockly.Python["uno_mpr121_read_check"] = function(block) {
     'mpr121_scan_task',
     ['def ' + Blockly.Python.FUNCTION_NAME_PLACEHOLDER_ + '():',
       Blockly.Python.INDENT + 'while True:',
-      Blockly.Python.INDENT + Blockly.Python.INDENT + 'mpr.scan(True)',
-      Blockly.Python.INDENT + Blockly.Python.INDENT + 'await asleep_ms(100)'
+      Blockly.Python.INDENT + Blockly.Python.INDENT + 'if mpr.scan(True) != -1:',
+      Blockly.Python.INDENT + Blockly.Python.INDENT + Blockly.Python.INDENT + 'await asleep_ms(500)',
+      Blockly.Python.INDENT + Blockly.Python.INDENT + 'else:',
+      Blockly.Python.INDENT + Blockly.Python.INDENT + Blockly.Python.INDENT + 'await asleep_ms(100)'
     ]);
 
-  Blockly.Python.definitions_['task_mpr131'] = 'create_task(' + cbFunctionName + '())';
+  Blockly.Python.definitions_['task_mpr121'] = 'create_task(' + cbFunctionName + '())';
   // TODO: Assemble Python into code variable.
   var value = Blockly.Python.valueToCode(block, 'VALUE', Blockly.Python.ORDER_ATOMIC);
   var code ="mpr.read() == " + value;
@@ -54,11 +56,13 @@ Blockly.Python["uno_mpr121_read"] = function(block) {
     'mpr121_scan_task',
     ['def ' + Blockly.Python.FUNCTION_NAME_PLACEHOLDER_ + '():',
       Blockly.Python.INDENT + 'while True:',
-      Blockly.Python.INDENT + Blockly.Python.INDENT + 'mpr.scan(True)',
-      Blockly.Python.INDENT + Blockly.Python.INDENT + 'await asleep_ms(100)'
+      Blockly.Python.INDENT + Blockly.Python.INDENT + 'if mpr.scan(True) != -1:',
+      Blockly.Python.INDENT + Blockly.Python.INDENT + Blockly.Python.INDENT + 'await asleep_ms(500)',
+      Blockly.Python.INDENT + Blockly.Python.INDENT + 'else:',
+      Blockly.Python.INDENT + Blockly.Python.INDENT + Blockly.Python.INDENT + 'await asleep_ms(100)'
     ]);
 
-  Blockly.Python.definitions_['task_mpr131'] = 'create_task(' + cbFunctionName + '())';
+  Blockly.Python.definitions_['task_mpr121'] = 'create_task(' + cbFunctionName + '())';
   // TODO: Assemble Python into code variable.
   var code ="mpr.read()";
   return [code, Blockly.Python.ORDER_NONE];
@@ -87,11 +91,13 @@ Blockly.Python['uno_mpr121_clear'] = function(block) {
     'mpr121_scan_task',
     ['def ' + Blockly.Python.FUNCTION_NAME_PLACEHOLDER_ + '():',
       Blockly.Python.INDENT + 'while True:',
-      Blockly.Python.INDENT + Blockly.Python.INDENT + 'mpr.scan(True)',
-      Blockly.Python.INDENT + Blockly.Python.INDENT + 'await asleep_ms(100)'
+      Blockly.Python.INDENT + Blockly.Python.INDENT + 'if mpr.scan(True) != -1:',
+      Blockly.Python.INDENT + Blockly.Python.INDENT + Blockly.Python.INDENT + 'await asleep_ms(500)',
+      Blockly.Python.INDENT + Blockly.Python.INDENT + 'else:',
+      Blockly.Python.INDENT + Blockly.Python.INDENT + Blockly.Python.INDENT + 'await asleep_ms(100)'
     ]);
 
-  Blockly.Python.definitions_['task_mpr131'] = 'create_task(' + cbFunctionName + '())';
+  Blockly.Python.definitions_['task_mpr121'] = 'create_task(' + cbFunctionName + '())';
   // TODO: Assemble Python into code variable.
   var code ="mpr.clear()\n";
   return code;
@@ -118,11 +124,13 @@ Blockly.Python["uno_mpr121_scan"] = function(block) {
     'mpr121_scan_task',
     ['def ' + Blockly.Python.FUNCTION_NAME_PLACEHOLDER_ + '():',
       Blockly.Python.INDENT + 'while True:',
-      Blockly.Python.INDENT + Blockly.Python.INDENT + 'mpr.scan(True)',
-      Blockly.Python.INDENT + Blockly.Python.INDENT + 'await asleep_ms(100)'
+      Blockly.Python.INDENT + Blockly.Python.INDENT + 'if mpr.scan(True) != -1:',
+      Blockly.Python.INDENT + Blockly.Python.INDENT + Blockly.Python.INDENT + 'await asleep_ms(500)',
+      Blockly.Python.INDENT + Blockly.Python.INDENT + 'else:',
+      Blockly.Python.INDENT + Blockly.Python.INDENT + Blockly.Python.INDENT + 'await asleep_ms(100)'
     ]);
 
-  Blockly.Python.definitions_['task_mpr131'] = 'create_task(' + cbFunctionName + '())';
+  Blockly.Python.definitions_['task_mpr121'] = 'create_task(' + cbFunctionName + '())';
   // TODO: Assemble Python into code variable.
   var code ="mpr.scan()";
   return [code, Blockly.Python.ORDER_NONE];
@@ -208,11 +216,13 @@ Blockly.Python['uno_mpr121_check'] = function(block) {
     'mpr121_scan_task',
     ['def ' + Blockly.Python.FUNCTION_NAME_PLACEHOLDER_ + '():',
       Blockly.Python.INDENT + 'while True:',
-      Blockly.Python.INDENT + Blockly.Python.INDENT + 'mpr.scan(True)',
-      Blockly.Python.INDENT + Blockly.Python.INDENT + 'await asleep_ms(100)'
+      Blockly.Python.INDENT + Blockly.Python.INDENT + 'if mpr.scan(True) != -1:',
+      Blockly.Python.INDENT + Blockly.Python.INDENT + Blockly.Python.INDENT + 'await asleep_ms(500)',
+      Blockly.Python.INDENT + Blockly.Python.INDENT + 'else:',
+      Blockly.Python.INDENT + Blockly.Python.INDENT + Blockly.Python.INDENT + 'await asleep_ms(100)'
     ]);
 
-  Blockly.Python.definitions_['task_mpr131'] = 'create_task(' + cbFunctionName + '())';
+  Blockly.Python.definitions_['task_mpr121'] = 'create_task(' + cbFunctionName + '())';
   // TODO: Assemble Python into code variable.
   var key = block.getFieldValue('KEY');
   var code = 'mpr.is_touched(' + key + ')';

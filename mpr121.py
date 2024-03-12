@@ -163,6 +163,7 @@ class MPR121:
                 if append:
                     self._input += self.KEYS[i]
                 return i
+        return -1
 
     def clear(self):
         self._input = ''
